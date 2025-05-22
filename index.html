@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gerenciamento de Tarefas (Kanban)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Gerenciamento de Tarefas (Kanban)</h1>
+    
+    <div class="task-form">
+      <input type="text" id="task-input" placeholder="Digite a descrição da tarefa">
+      <button id="add-task-btn">Adicionar Tarefa</button>
+    </div>
+    
+    <div class="kanban-board">
+      <div class="kanban-column" data-column="em-aberto">
+        <div class="column-header em-aberto">Em aberto</div>
+        <div class="tasks-container" id="em-aberto"></div>
+      </div>
+      
+      <div class="kanban-column" data-column="bid">
+        <div class="column-header bid">Bid (Negociação)</div>
+        <div class="tasks-container" id="bid"></div>
+      </div>
+      
+      <div class="kanban-column" data-column="em-andamento">
+        <div class="column-header em-andamento">Em andamento</div>
+        <div class="tasks-container" id="em-andamento"></div>
+      </div>
+      
+      <div class="kanban-column" data-column="entregue">
+        <div class="column-header entregue">Entregue</div>
+        <div class="tasks-container" id="entregue"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
